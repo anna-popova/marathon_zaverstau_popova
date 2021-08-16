@@ -12,13 +12,12 @@
   <body>
 
     <header class="main-header">
-      <nav class="header-nav">
-        <ul>
+        <ul class="header-nav">
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">Отзывы</a></li>
           <li>
-            <a href="#" class="logo">
+            <a class="logo" href="#">
             <img src="files/logo.svg" width="100" height="32" alt="Логотип">
             </a>
           </li>
@@ -26,7 +25,6 @@
           <li><a href="#">Контакты</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
-      </nav>
     </header>
 
     <main>
@@ -34,7 +32,8 @@
         <h2>Авторские букеты в <i>Петербурге</i></h2>
         <p>Оригинальные свежие букеты<br>
             с доставкой по всему городу</p>
-            <button onclick="#">Смотреть каталог</button>
+        <!-- <button onclick="#">Смотреть каталог</button> -->
+        <a class="btn" href="#" title="Открыть каталог">Смотреть каталог</a>
       </section>
 
       <section class="benefits">
@@ -52,8 +51,10 @@
         <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
         <p>30 × 40 см</p>
         <p class="price">3600 руб.</p>
-        <button onclick="#">Заказать</button>
-        <img src="img/popular_bouquets.svg" width="387" height="438" alt="Популярный букет">
+        <!-- <button onclick="#">Заказать</button> -->
+        <a class="btn" href="#">Заказать</a>
+        <img src="img/popular_bouquets.svg" width="387" height="438" alt="Популярный букет «Нежность»">
+        <br> <!-- убрать после добавления стилей -->
         <img class="arrow" src="files/Arrow2.svg" width="50" alt="Стрелка">
         <img class="arrow" src="files/Arrow1.svg" width="50" alt="Стрелка">
       </section>
@@ -90,13 +91,13 @@
       <article>
         <h3>Следите за нашими новостями</h3>
         <p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-        <a href="https://www.instagram.com/">
+        <a class="social-btn" href="https://www.instagram.com/">
           <img src="files/instagram_icon.svg" alt="Наш инстаграм">
         </a>
-        <a href="https://www.facebook.com/">
+        <a class="social-btn" href="https://www.facebook.com/">
           <img src="files/facebook_icon.svg" alt="Наш фейсбук">
         </a>
-        <a href="https://https://twitter.com/">
+        <a class="social-btn" href="https://https://twitter.com/">
           <img src="files/twitter_icon.svg" alt="Наш твиттер">
         </a>
       </article>
@@ -141,24 +142,22 @@
       </a>
       </div> 
 
-      <nav class="footer-nav">
-        <ul>
+        <ul class="footer-nav">
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">Отзывы</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      </nav>
-
-      <div class="links">
-        <a href="https://www.instagram.com/">
+ 
+      <div class="footer-social">
+        <a class="social-btn" href="https://www.instagram.com/">
           <img src="files/instagram_icon.svg" alt="Наш инстаграм">
         </a>
-        <a href="https://www.facebook.com/">
+        <a class="social-btn" href="https://www.facebook.com/">
           <img src="files/facebook_icon.svg" alt="Наш фейсбук">
         </a>
-        <a href="https://https://twitter.com/">
+        <a class="social-btn" href="https://https://twitter.com/">
           <img src="files/twitter_icon.svg" alt="Наш твиттер">
         </a>
       </div>
