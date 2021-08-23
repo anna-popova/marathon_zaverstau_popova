@@ -1,1 +1,158 @@
+.header-nav li {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+
+    list-style-type: none; 
+}
+
+.visually-hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;   
+    color: white; 
+}
+
+.header-nav a,
+.contacts-info a {
+    color: #AE7C78;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78; 
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    color: #AE7C78;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #AE7C78;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+span {
+    font-style: italic;
+}
+
+.intro p,
+.news-info p {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    background-color: #D89999;
+    border-radius: 40px;
+}
+
+.bouquet-name, 
+.price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+button[type="button"] {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.discount {
+    width: 1200px;
+    height: 391px;
+    left: 120px;
+    top: 2018px;
+
+    background-color: #AE7C78;
+    background-image: url("img/discount_background.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.discount h2 {
+    color: white;
+}
+
+.discount p {
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}
+
+cite {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: #AE7C78;
+}
+
+.contacts {
+    width: 1440px;
+    height: 644px;
+    border: 1px solid white;
+
+    background-image: url("img/map.jpg");
+    background-repeat: no-repeat;
+}
+
+.contacts-info {
+    width: 386px;
+    height: 520px;
+    margin: 52px 832px 72px 222px;
+
+    background-color: white;
+    box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+}
+
+.contacts-info .title {
+    font-weight: 500;
+}
+
+footer {
+    background-color: #AE7C78;
+}
+
+.footer-nav li {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    list-style-type: none; 
+}
 
