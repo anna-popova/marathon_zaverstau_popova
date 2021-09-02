@@ -1,15 +1,24 @@
-.header-nav li {
-    font-family: "Montserrat", sans-serif; 
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #AE7C78;
-
-    list-style-type: none; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
 }
 
 .visually-hidden {
     display: none;
+}
+
+body {
+    font-family: "Montserrat", "Arial", sans-serif; 
+    font-weight: normal;
+    font-size: 16px;
+
+    background-color: #FFFFFF;
+}
+
+.header-nav li, p {
+    line-height: 20px;
 }
 
 a {
@@ -17,42 +26,27 @@ a {
     color: white; 
 }
 
-.header-nav a,
-.contacts-info a {
+.header-nav a, .contacts-info a, .header-nav li, p, h2, h3, h4, cite {
     color: #AE7C78;
-}
-
-p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #AE7C78; 
 }
 
 h2 {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", "Times New Roman", serif;
     font-weight: normal;
     font-size: 44px;
     line-height: 59px;
-    color: #AE7C78;
 }
 
 h3 {
-    font-family: "Playfair Display", serif;;
+    font-family: "Playfair Display", "Times New Roman", serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #AE7C78;
 }
 
 h4 {
-    font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
     line-height: 20px;
-    color: #AE7C78;
 }
 
 span {
@@ -63,17 +57,6 @@ span {
 .news-info p {
     font-size: 24px;
     line-height: 29px;
-}
-
-.btn {
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-
-    background-color: #D89999;
-    border-radius: 40px;
 }
 
 .bouquet-name, 
@@ -88,16 +71,8 @@ button[type="button"] {
     border: none;
 }
 
-.discount {
-    width: 1200px;
-    height: 391px;
-    left: 120px;
-    top: 2018px;
-
+.discount, footer {
     background-color: #AE7C78;
-    background-image: url("img/discount_background.jpg");
-    background-repeat: no-repeat;
-    background-position: right center;
 }
 
 .discount h2 {
@@ -111,48 +86,370 @@ button[type="button"] {
 }
 
 cite {
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
     line-height: 20px;
     font-style: normal;
-    color: #AE7C78;
-}
-
-.contacts {
-    width: 1440px;
-    height: 644px;
-    border: 1px solid white;
-
-    background-image: url("img/map.jpg");
-    background-repeat: no-repeat;
-}
-
-.contacts-info {
-    width: 386px;
-    height: 520px;
-    margin: 52px 832px 72px 222px;
-
-    background-color: white;
-    box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
-    border-radius: 12px;
 }
 
 .contacts-info .title {
     font-weight: 500;
 }
 
-footer {
-    background-color: #AE7C78;
-}
-
 .footer-nav li {
-    font-family: "Montserrat", sans-serif; 
-    font-weight: normal;
-    font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-
-    list-style-type: none; 
 }
 
+/*блочная модель документа далее*/
+
+/*header*/
+.header-nav {
+    min-height: 64px;
+    margin-top: 26px;
+    display: grid;
+
+    border-top: 1px solid #AE7C78;
+    border-bottom: 1px solid #AE7C78;
+}
+
+.header-nav .reset-list {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*intro*/
+.intro {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.intro-information {
+    width: 384px;
+    margin-right: 23px;
+    margin-top: 81px;
+}
+
+.intro-information h2 {
+    margin-bottom: 24px;
+}
+
+.intro-information p {
+    margin-bottom: 64px;
+}
+
+.btn { /*как расположить текст по центру по вертикали???*/
+    width: 285px;
+    height: 80px;
+    display: block;
+
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #D89999;
+    border-radius: 40px;
+}
+
+.intro-img-first {
+    margin-right: 20px;
+    margin-top: 140px;
+}
+
+.intro-img-second {
+    margin-top: 82px;
+}
+
+/*benefits*/
+.benefits {
+    width: 1200px;
+    margin: 48px auto 80px;
+    display: flex;
+}
+
+.benefits h4,
+.steps h4 {
+    margin-bottom: 8px;
+}
+
+.benefits_delivery {
+    width: 384px;
+    padding-left: 102px;
+    margin-right: 49px;
+
+    background-image: url("img/icon_benefits_delivery.svg");
+    background-repeat: no-repeat;
+    background-size: 82px 52px;
+}
+
+.benefits_fresh {
+    width: 355px;
+    padding-left: 72px;
+    margin-right: 40px;
+
+    background-image: url("img/icon_benefits_fresh.svg");
+    background-repeat: no-repeat;
+    background-size: 52px 52px;
+}
+
+.benefits_photo {
+    width: 371px;
+    padding-left: 82px;
+
+    background-image: url("img/icon_benefits_photo.svg");
+    background-repeat: no-repeat;
+    background-size: 58px 52px;
+}
+
+/*popular_bouquets*/
+.popular_bouquets {
+    width: 794px;
+    margin: 80px auto 80px;
+    text-align: center;
+}
+
+.slider-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+    margin-top: 63px;
+    margin-bottom: 24px;
+}
+
+.slider-item_description {
+    text-align: start;
+}
+
+.bouquet-name {
+    margin-bottom: 20px;
+}
+
+.slider-item_description p:nth-child(3) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.price {
+    margin-bottom: 63px;
+}
+
+/*bouquets_types*/
+.bouquets_types {
+    width: 1200px;
+    margin: 80px auto 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 19px;
+}
+
+/*discount*/
+.discount {
+    width: 1200px;
+    height: 388px;
+    margin: 80px auto 80px;
+
+    display: grid;
+    grid-template-columns: 610px 590px;
+}
+
+.discount-info {
+    padding: 52px 130px 64px 102px;
+}
+
+.discount-info h2 {
+    margin-bottom: 24px;
+}
+
+/*steps*/
+.steps {
+    width: 1200px;
+    margin: 80px auto 109px auto;
+    text-align: center;
+}
+
+.steps h3 {
+    margin-bottom: 33px;
+}
+
+.steps-list {
+    display: flex;
+}
+
+.steps-list-order, .steps-list-details,
+.steps-list-pay, .steps-list-delivery {
+    width: 285px;
+    margin-right: 20px;
+}
+
+.steps-list-order {
+    padding-top: 63px;
+
+    background-image: url("img/steps_order_icon.svg");
+    background-repeat: no-repeat;
+    background-size: 66px 52px;
+    background-position: center top;
+}
+
+.steps-list-details {
+    padding-top: 63px;
+
+    background-image: url("img/steps_details_icon.svg");
+    background-repeat: no-repeat;
+    background-size: 66px 52px;
+    background-position: center top;
+}
+
+.steps-list-pay {
+    padding-top: 63px;
+
+    background-image: url("img/steps_pay_icon.svg");
+    background-repeat: no-repeat;
+    background-size: 66px 52px;
+    background-position: center top;
+}
+
+.steps-list-delivery {
+    margin-right: 0;
+    padding-top: 63px;
+
+    background-image: url("img/steps_delivery_icon.svg");
+    background-repeat: no-repeat;
+    background-size: 66px 52px;
+    background-position: center top;
+}
+
+/*news*/
+.news {
+    width: 1200px;
+    margin: 109px auto 50px auto;
+    
+    display: grid;
+    grid-template-columns: 488px 285px 387px;
+    column-gap: 20px;
+}
+
+.news-info {
+    padding: 70px 137px 109px 0;
+}
+
+.news-info p{
+    margin-top: 39px;
+    margin-bottom: 37px;
+}
+
+.social-btn-container {
+    display: flex;
+}
+
+.social-btn-container a {
+    display: block;
+}
+
+.social-btn-container a:nth-child(even) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.news-bouquet-left img {
+    display: block;
+}
+
+.news-bouquet-left img:first-child {
+    margin-bottom: 20px
+}
+
+/*feedback*/
+.feedback {
+    width: 1200px;
+    margin: 50px auto 76px auto;
+    padding: 40px 44px 62px 44px;
+
+    text-align: center;
+    border: 1px solid #AE7C78;
+}
+
+.feedback h3 {
+    margin-bottom: 40px;
+}
+
+.feedback-list {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 106px;
+}
+
+.feedback-list p {
+    margin-bottom: 16px;
+}
+
+/*contacts*/
+.contacts {
+    height: 644px;
+    
+    border: 1px solid white;
+    background-image: url("img/map.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 644px;
+}
+
+.contacts-info {
+    width: 386px;
+    height: 520px;
+    margin: 52px 832px 72px 222px;
+    padding: 40px 108px 65px 35px;
+
+    background-color: white;
+    box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+}
+
+.contacts-info h3 {
+    margin-bottom: 42px;
+}
+
+.contacts-info .title {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+/*footer*/
+.container-footer {
+    width: 1200px;
+    min-height: 97px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav {
+    margin-left: 103px;
+    margin-right: 105px;
+}
+
+.footer-nav .reset-list {
+    width: 795px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social .social-btn {
+    display: block;
+}
+
+.footer-social .social-btn:nth-child(even) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
