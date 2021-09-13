@@ -6,15 +6,15 @@
     <meta name="description" content="Botanika - авторские букеты в Петербурге с доставкой по всему городу">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css"> <!-- стили подключать после шрифтов -->
-    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="css/normalize.css"> <!-- стили подключать после шрифтов -->
+    <link rel="stylesheet" href="css/style.css">   
     <title>Botanika - цветы в Петербурге</title>
   </head>
   <body>
 
     <header class="page-header">
       <nav class="header-nav">
-       <a class="logo-header"><img src="files/logo.svg" width="100" height="32" alt="Логотип"></a>
+       <a class="logo-header"><img src="img/logo.svg" width="100" height="32" alt="Логотип"></a>
             
         <ul class="reset-list">
           <li><a class="navigation-link" href="#">Каталог</a></li>
@@ -38,10 +38,10 @@
         </div>
         
         <div class="intro-img">
-          <img src="img/intro1.jpg" width="386" height="404" alt="Букет розовых тюльпанов">
+          <img src="img/intro_left.jpg" width="386" height="404" alt="Букет розовых тюльпанов">
         </div>
         <div class="intro-img">
-          <img src="img/intro2.jpg" width="387" height="420" alt="Букет из белых и розовых роз">
+          <img src="img/intro_right.jpg" width="387" height="420" alt="Букет из белых и розовых роз">
         </div>
       </section>
 
@@ -77,29 +77,30 @@
               <a class="btn" href="#">Заказать</a>
             </div>
             <div class="slider-item_picture">
-              <img src="files/popular_bouquets.png" width="387" height="438" alt="Популярный букет «Нежность»">
+              <img src="img/popular_bouquets.png" width="387" height="438" alt="Популярный букет «Нежность»">
             </div>  
           </div>
 
           <div class="slider-control">
-            <button type="button"><img src="files/arrow2.svg" alt="Назад"></button>
-            <button type="button"><img src="files/arrow1.svg" alt="Вперед"></button>
+            <button type="button"><img src="img/arrow_left.svg" alt="Назад"></button>
+            <button type="button"><img src="img/arrow_right.svg" alt="Вперед"></button>
           </div>
         </div>
       </section>
       
       <section class="bouquets_types">
-        <h3 class="visually-hidden">Типы букетов</h3>
-        
-        <a href="#">
-          <img src="files/block1.jpg" width="388" height="442" alt="Свадебные букеты">
-        </a>
-        <a href="#">
-          <img src="files/block2.jpg" width="388" height="442" alt="Букеты с пионами">
-        </a>
-        <a href="#">
-          <img src="files/block3.jpg" width="388" height="442" alt="Выбрать букет">
-        </a>
+        <div class="bouquets_types_block wedding">
+          <h3><a href="#">Свадебные букеты</a></h3>
+          <p><a href="#">Букеты для невест</a></p>
+        </div>
+        <div class="bouquets_types_block peonies">
+          <h3><a href="#">Букеты с пионами</a></h3>
+          <p><a href="#">Букеты с сезонными пионами</a></p>
+        </div>
+        <div class="bouquets_types_block choose">
+          <h3><a href="#">Выбрать букет</a></h3>
+          <p><a href="#">Букеты в ассортименте</a></p>
+        </div>
       </section>
 
       <section class="discount">
@@ -143,23 +144,23 @@
           
           <div class="social-btn-container">
             <a class="social-btn" href="https://www.instagram.com/">
-                <img src="files/instagram_icon.svg" width="20" height="20" alt="Наш инстаграм">
+                <img src="img/instagram_icon.svg" width="20" height="20" alt="Наш инстаграм">
             </a>
             <a class="social-btn" href="https://www.facebook.com/">
-                <img src="files/facebook_icon.svg" width="12" height="20" alt="Наш фейсбук">
+                <img src="img/facebook_icon.svg" width="12" height="20" alt="Наш фейсбук">
             </a>
             <a class="social-btn" href="https://https://twitter.com/">
-                <img src="files/twitter_icon.svg" width="26" height="20" alt="Наш твиттер">
+                <img src="img/twitter_icon.svg" width="26" height="20" alt="Наш твиттер">
             </a>
           </div>
       </div>
 
         <div class="news-bouquet-left">
-          <img src="img/article1.jpg" alt="Маленький букет с розами и зеленью" width="285" height="220">
-          <img src="img/article2.jpg" alt="Средний букет с розами и травой" width="285" height="220">
+          <img src="img/article_small.jpg" alt="Маленький букет с розами и зеленью" width="285" height="220">
+          <img src="img/article_middle.jpg" alt="Средний букет с розами и травой" width="285" height="220">
         </div>
         <div class="news-bouquet-right">
-          <img src="img/article3.jpg" alt="Большой букет с розовыми пионами и зеленью" width="387" height="460">
+          <img src="img/article_big.jpg" alt="Большой букет с розовыми пионами и зеленью" width="387" height="460">
         </div>
       </section>
 
@@ -183,7 +184,7 @@
       </section>
     
       <section class="contacts">
-        <img src="img/map.jpg" class="contacts-map" width="100%" height="644" alt="Карта с указанием нашего шестоположения">
+        <img src="img/map.jpg" class="contacts-map" height="644" alt="Карта с указанием нашего шестоположения">
 
         <div class="contacts-info">
           <h3>Мы ждем вас</h3>
@@ -207,7 +208,7 @@
       <div class="container-footer">
 
         <div class="logo-footer">
-          <a><img src="files/logo_white.svg" width="100" height="32" alt="Логотип"></a>
+          <a><img src="img/logo_white.svg" width="100" height="32" alt="Логотип"></a>
         </div>
 
         <nav class="footer-nav">
@@ -222,13 +223,13 @@
   
         <div class="footer-social">
           <a class="social-btn" href="https://www.instagram.com/">
-            <img src="files/instagram_icon_white.svg" width="20" height="20" alt="Наш инстаграм">
+            <img src="img/instagram_icon_white.svg" width="20" height="20" alt="Наш инстаграм">
           </a>
           <a class="social-btn" href="https://www.facebook.com/">
-            <img src="files/facebook_icon_white.svg" width="12" height="20" alt="Наш фейсбук">
+            <img src="img/facebook_icon_white.svg" width="12" height="20" alt="Наш фейсбук">
           </a>
           <a class="social-btn" href="https://https://twitter.com/">
-            <img src="files/twitter_icon_white.svg" width="26" height="20" alt="Наш твиттер">
+            <img src="img/twitter_icon_white.svg" width="26" height="20" alt="Наш твиттер">
           </a>
         </div>
         
